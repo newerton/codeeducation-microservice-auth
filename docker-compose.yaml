@@ -32,3 +32,11 @@ services:
     environment:
       - MYSQL_DATABASE=micro_auth
       - MYSQL_ROOT_PASSWORD=root
+
+  frontend:
+    build: ./frontend
+    entrypoint: ./.docker/entrypoint.sh
+    container_name: micro-auth-frontend
+    tty: true
+    volumes:
+      - ./frontend:/home/node/app
