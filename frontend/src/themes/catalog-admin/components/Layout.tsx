@@ -74,7 +74,7 @@ export const Layout: React.FunctionComponent<LayoutProps> = (props) => {
         </Alert>
       )}
       {children}
-      <Box mt={8} width="100%" className={classes.footer}>
+      <Box mt={4} width="100%" className={classes.footer}>
         {i18nEnabled && locale && (
           <LocaleSelect
             locales={locale?.locales}
