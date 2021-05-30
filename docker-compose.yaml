@@ -14,7 +14,8 @@ services:
       - DB_USER=root
       - DB_PASSWORD=root
     volumes:
-      - ./themes/microauth:/opt/jboss/keycloak/themes/microauth
+      - ./frontend/build/catalog-admin:/opt/jboss/keycloak/themes/catalog-admin
+      - ./keycloak/config/standalone-ha.xml:/opt/jboss/keycloak/standalone/configuration/standalone-ha.xml
     ports:
       - 8080:8080
     depends_on:
@@ -25,8 +26,6 @@ services:
     container_name: micro-auth-db
     restart: always
     tty: true
-    ports:
-      - 33306:3306
     volumes:
       - ./.docker/mysql/dbdata:/var/lib/mysql
     environment:
