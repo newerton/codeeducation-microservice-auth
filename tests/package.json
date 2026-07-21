@@ -10,9 +10,9 @@
   "dependencies": {
     "@types/express-session": "^1.19.0",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.9.1",
+    "@types/node": "^26.1.1",
     "@types/selenium-webdriver": "^4.35.6",
-    "chromedriver": "^149.0.0",
+    "chromedriver": "^151.0.0",
     "express-session": "^1.19.0",
     "jest": "^30.4.2",
     "keycloak-connect": "^26.1.1",
@@ -22,9 +22,8 @@
     "typescript": "^6.0.3"
   },
   "overrides": {
-    "@babel/core": "^7.29.1",
-    "elliptic": "npm:@mapped/elliptic@^6.6.4",
-    "js-yaml": "^4.3.0"
+    "adm-zip": "^0.6.0",
+    "brace-expansion": "^2.1.2"
   },
   "allowScripts": {
     "chromedriver@149.0.0": true,
