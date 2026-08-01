@@ -1,32 +1,36 @@
 {
-  "name": "keycloak-test",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Newerton Vargas de Araujo",
-  "license": "MIT",
-  "scripts": {
-    "test": "jest --rootDir __tests__"
-  },
-  "dependencies": {
-    "@types/express-session": "^1.19.0",
-    "@types/jest": "^30.0.0",
-    "@types/node": "^26.1.1",
-    "@types/selenium-webdriver": "^4.35.6",
-    "chromedriver": "^151.0.0",
-    "express-session": "^1.19.0",
-    "jest": "^30.4.2",
-    "keycloak-connect": "^26.1.1",
-    "selenium-webdriver": "^4.0.0-beta.3",
-    "ts-jest": "^29.4.11",
-    "ts-node": "^10.9.2",
-    "typescript": "^6.0.3"
-  },
-  "overrides": {
-    "adm-zip": "^0.6.0",
-    "brace-expansion": "^2.1.2"
-  },
-  "allowScripts": {
-    "chromedriver@149.0.0": true,
-    "unrs-resolver@1.12.2": true
-  }
+	"name": "keycloak-test",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Newerton Vargas de Araujo",
+	"license": "MIT",
+	"scripts": {
+		"test": "jest --rootDir __tests__",
+		"lint": "biome check --write --unsafe"
+	},
+	"dependencies": {
+		"@types/express-session": "^1.19.0",
+		"@types/jest": "^30.0.0",
+		"@types/node": "^26.1.2",
+		"@types/selenium-webdriver": "^4.35.6",
+		"chromedriver": "^151.0.2",
+		"express-session": "^1.19.0",
+		"jest": "^30.4.2",
+		"keycloak-connect": "^26.1.1",
+		"selenium-webdriver": "^4.46.0",
+		"ts-jest": "^29.4.12",
+		"ts-node": "^10.9.2",
+		"typescript": "^6.0.3"
+	},
+	"overrides": {
+		"adm-zip": "^0.6.0",
+		"brace-expansion": "^5.0.9"
+	},
+	"allowScripts": {
+		"chromedriver@149.0.0": true,
+		"unrs-resolver@1.12.2": true
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.6"
+	}
 }
